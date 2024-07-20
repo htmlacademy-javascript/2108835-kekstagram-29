@@ -1,4 +1,8 @@
-import {generatePhotos} from './data.js';
+import { generatePhotosArray } from './data.js';
+import { renderPictures } from './pictures.js';
+import { loadPicture } from './form.js';
 
-generatePhotos();
+const usersPictures = generatePhotosArray();
 
+renderPictures(usersPictures);
+loadPicture();
